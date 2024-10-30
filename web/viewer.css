@@ -5013,3 +5013,9 @@ dialog :link{
     display:none;
   }
 }
+#downloadButton { display: none !important; }
+#printButton { display: none !important; }
+#pdfjs-save-button {display: none !important;}
+button#secondaryOpenFile {display: none !important;}
+button#secondaryPrint {display: none !important;}
+button#secondaryDownload {display: none !important;}
