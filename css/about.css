@@ -14,7 +14,7 @@
     
     p,a {
       font-family: Kanit, sans-serif;
-      color: #A92121;
+      color: #A92121 !important;
       size: 16px;
     }
     
@@ -24,7 +24,7 @@
     
     .image-blurred-edge {
       position: absolute;
-      top: 20px;
+      top: auto;
       left: 150px;
         background-image: url(https://i.pinimg.com/564x/37/2a/b0/372ab0655ce8362fdaba4f4bf117733d.jpg);
         width: 390px;
@@ -35,7 +35,7 @@
     .mainbody {
       position: absolute;
       left: 550px;
-      top: 40px;
+      top: auto;
       width: 600px;
       height: 570px;
       background-color: white;
@@ -49,7 +49,7 @@
       top: 80px;
       left: 45px;
       border: 2px solid;
-      border-color: #A92121;
+      border-color: #A92121 !important;
       border-radius: 20px;
       padding: 10px;
     }
@@ -82,3 +82,71 @@
       position: absolute;
       top: 230px;
     }
+    
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      .mainbody{
+        top:auto;
+        left:auto;
+        width:100%;
+        padding-right:0px;
+       }
+       .mainbody .maintwo{
+        top:177px;
+        left:1px;
+        bottom:400px;
+        right:82px;
+        position:absolute;
+       }
+       .mainbody img{
+        top:60px;
+        left:285px;
+        right:-200px;
+        bottom:-200px;
+        position:absolute;
+       }
+      .image-blurred-edge {
+        width: 100%; /* Allow full width for small screens */
+        height: auto; /* Let the height adjust */
+      }
+    
+      .mainbody {
+        padding: 15px; /* Adjust padding */
+      }
+    
+      .icon {
+        width: 100px; /* Smaller icon for smaller screens */
+      }
+    
+      h1 {
+        font-size: 1.8rem; /* Adjust font size */
+      }
+    
+      h2, h3 {
+        font-size: 1.5rem; /* Adjust heading font size */
+      }
+    
+      p, a {
+        font-size: 14px; /* Adjust paragraph and link font size */
+      }
+    
+      .content {
+        padding: 5px; /* Reduce content padding */
+      }
+    }
+    
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.5rem; /* Further adjust font size */
+      }
+    
+      h2, h3 {
+        font-size: 1.3rem; /* Further adjust heading font size */
+      }
+    
+      p, a {
+        font-size: 12px; /* Further adjust paragraph and link font size */
+      }
+    }
+    
+    
